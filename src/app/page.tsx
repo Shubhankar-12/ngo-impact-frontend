@@ -88,12 +88,12 @@ export default function DashboardPage() {
                 >
                   <CalendarIcon className="mr-2 h-4 w-4" />
                   {date ? format(date, "MMMM yyyy") : <span>Select month</span>}
-                  <X
-                    className="ml-auto h-4 w-4 opacity-50 cursor-pointer"
-                    onClick={() => setDate(null as any)}
-                  />
                 </Button>
               </PopoverTrigger>
+              <X
+                className="ml-auto h-4 w-4 opacity-50 cursor-pointer"
+                onClick={() => setDate(null as any)}
+              />
               <PopoverContent className="w-auto p-0" align="end">
                 <MonthPicker onMonthSelect={setDate} selectedMonth={date} />
               </PopoverContent>
