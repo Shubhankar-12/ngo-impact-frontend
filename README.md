@@ -5,6 +5,16 @@ A modern web application for tracking and visualizing NGO activities and impact 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20Site-blue)](https://ngo-impact-frontend.onrender.com)
 [![GitHub Repository](https://img.shields.io/badge/GitHub-View%20Code-green)](https://github.com/Shubhankar-12/ngo-impact-frontend)
 
+## Screenshots
+
+### Home Dashboard
+
+![Home Dashboard Page](https://github.com/Shubhankar-12/ngo-impact-frontend/blob/main/public/Home.png)
+
+### Create NGO Page
+
+![Create NGO Page](https://github.com/Shubhankar-12/ngo-impact-frontend/blob/main/public/NGO.png)
+
 ## Overview
 
 **NGO Impact** is a comprehensive platform designed to help organizations monitor and report their social impact. The application enables users to:
