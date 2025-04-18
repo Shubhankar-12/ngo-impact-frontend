@@ -52,7 +52,7 @@ export const ComboBox: React.FC<ComboBoxProps> = ({
           variant="outline"
           role="combobox"
           aria-expanded={open}
-          className={cn("w-[200px] justify-between", className)}
+          className={cn("w-full justify-between", className)}
         >
           {value
             ? options.find((option) => option.value === value)?.label
@@ -60,7 +60,7 @@ export const ComboBox: React.FC<ComboBoxProps> = ({
           <ChevronsUpDown className="ml-2 h-4 w-4 opacity-50 shrink-0" />
         </Button>
       </PopoverTrigger>
-      <PopoverContent className="w-[200px] p-0">
+      <PopoverContent className="w-full p-0">
         <Command>
           <CommandInput
             placeholder="Search..."
