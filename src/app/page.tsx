@@ -172,7 +172,7 @@ export default function DashboardPage() {
           <CardHeader>
             <CardTitle>Submit New Report</CardTitle>
             <CardDescription>
-              Add this month&apos;s report to the dashboard
+              Add your month&apos;s report to the dashboard
             </CardDescription>
           </CardHeader>
           <CardContent>

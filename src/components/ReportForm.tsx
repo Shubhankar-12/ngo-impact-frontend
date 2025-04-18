@@ -64,7 +64,7 @@ const ReportForm: React.FC<ReportFormProps> = ({ refreshData }) => {
       if (resp.status === 200) {
         const ngoList = resp.data.result.map((ngo: any) => ({
           value: ngo.ngo_id,
-          label: ngo.name,
+          label: `${ngo.display_id} - ${ngo.name}`,
         }));
         console.log("NGOs:", ngoList);
 
@@ -159,6 +159,7 @@ const ReportForm: React.FC<ReportFormProps> = ({ refreshData }) => {
             NGO
           </Label>
           <ComboBox
+            className="w-full"
             defaultValue={data.ngo_id}
             options={NGOs}
             onSearch={setSearch}
@@ -179,7 +180,7 @@ const ReportForm: React.FC<ReportFormProps> = ({ refreshData }) => {
                 <Button
                   variant="outline"
                   className={cn(
-                    "w-[240px] justify-start text-left font-normal",
+                    "w-full justify-start text-left font-normal",
                     !data.month && "text-muted-foreground"
                   )}
                 >
